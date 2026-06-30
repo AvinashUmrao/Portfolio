@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    
+    --background: 222.4 49% 8.4%; 
+    --foreground: 0 0% 100%; 
+    --card: 215 28% 17%; 
+    --card-foreground: 0 0% 100%; 
+    --popover: 221 39% 11%; 
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 84% 60%; 
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 95% 53%; 
+    --secondary-foreground: 0 0% 100%;
+    --muted: 221 39% 11%; 
+    --muted-foreground: 215 20% 65%; 
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 25% 27%; 
+    --input: 215 25% 27%;
+    --ring: 215 25% 27%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.5rem;
+    --section: 221 39% 11%; 
+    --secondary-text: 212 33% 84%; 
+    --hover-accent: 28 95% 61%; 
+  }
+  .dark {
+    
+    --background: 222.4 49% 8.4%; 
+    --foreground: 0 0% 100%;
+    --card: 215 28% 17%; 
+    --card-foreground: 0 0% 100%;
+    --popover: 221 39% 11%; 
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 84% 60%; 
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 95% 53%; 
+    --secondary-foreground: 0 0% 100%;
+    --muted: 221 39% 11%;
+    --muted-foreground: 215 20% 65%; 
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 215 25% 27%; 
+    --input: 215 25% 27%;
+    --ring: 215 25% 27%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --section: 221 39% 11%; 
+    --secondary-text: 212 33% 84%; 
+    --hover-accent: 28 95% 61%; 
+  }
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+  .no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+}
+
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
